@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #3e3e55);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.clock {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 500px;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 5px;
+  text-align: center;
+  backdrop-filter: blur(40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.date {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #ccc;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.time {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.colon {
+  margin: 0 10px;
+  font-size: 60px;
+  font-weight: bold;
+  align-self: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .clock {
+    flex-direction: column;
+    font-size: 40px;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .date {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .colon {
+    margin: 0 5px;
+  }
+}
